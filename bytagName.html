@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo del dom con JS</title>
+</head>
+<body>
+        <!-- <h1>Ejemplo Dom con java Script</h1>
+        <h2>Saludos....</h2>
+
+        <script>
+            console.log('Saludando por consola')
+        </script> -->
+
+
+          <!-- <h1 id="cabecera">Titulo uno con DOM</h1>
+          <p id="parrafo">Saludos ADSO</p>
+
+          <script>
+            let cabecero = document.getElementById('cabecera');
+            console.log('El Valor del Elemento con id cabecera :' + cabecero.innerHTML );
+            let parrafo = document.getElementById('parrafo');
+            console.log(`valor del parrafo es : ${parrafo.innerHTML}`);
+
+          </script> -->
+
+
+          <h1 id="titulo1">Ejemplo DOS con DOM </h1>
+          <p>Saludos!!!</p>
+            <p>Vuelvo y los Saludo</p>
+            <p>Prueba otro</p>
+            <p>Otra Prueba</p>
+        
+            <script>
+                let parrafos = document.getElementsByTagName('p');
+                console.log(`No. Parrafos: ${parrafos.length}`);
+                for (let i= 0 ; i<=parrafos.length; i++){
+                    console.log(`${ i } - ${parrafos[i].innerHTML}`);
+                }
+            </script>
+
+
+
+
+
+
+</body>
+</html> |
