@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talleres dom</title>
+    <style>
+        .azul{
+            color:blue;
+            background-color: aqua;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="azul">Prueba de titulos</h1>
+    <p class="azul">Prueba de parrafo con clase</p>
+    <p class="azul">Prueba de parrafo sin clase</p>
+
+    <script>
+        let elementos = document.querySelectorAll('azul');
+        console.log(`No. Elementos que cumplen la condición: ${elementos.length}`);
+        for(let i=0; i<elementos.length; i++){
+            console.log(`${elementos[i].innerHTML}`)}
+    </script>
+</body>
+</html>
